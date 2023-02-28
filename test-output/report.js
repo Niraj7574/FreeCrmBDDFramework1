@@ -1,4 +1,4 @@
-$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("login.feature");
+$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("C:/QA/Selenium_WorkSpace/FreeCrmBDDFramework1/src/main/java/Features/tagging.feature");
 formatter.feature({
   "comments": [
     {
@@ -75,101 +75,199 @@ formatter.feature({
     }
   ],
   "line": 20,
-  "name": "Free CRM Login Feature",
+  "name": "Login test for Free CRM Application",
   "description": "",
-  "id": "free-crm-login-feature",
-  "keyword": "Feature"
+  "id": "login-test-for-free-crm-application",
+  "keyword": "Feature",
+  "tags": [
+    {
+      "line": 19,
+      "name": "@FunctionalTest"
+    }
+  ]
 });
 formatter.scenario({
   "line": 23,
-  "name": "Free CRM Login Test Scenario",
+  "name": "Login with correct username and password",
   "description": "",
-  "id": "free-crm-login-feature;free-crm-login-test-scenario",
+  "id": "login-test-for-free-crm-application;login-with-correct-username-and-password",
   "type": "scenario",
-  "keyword": "Scenario"
+  "keyword": "Scenario",
+  "tags": [
+    {
+      "line": 22,
+      "name": "@SmokeTest"
+    },
+    {
+      "line": 22,
+      "name": "@RegressionTest"
+    },
+    {
+      "line": 22,
+      "name": "@End2End"
+    }
+  ]
 });
 formatter.step({
-  "line": 25,
-  "name": "User is already on Login Page",
+  "line": 24,
+  "name": "Valid login test",
   "keyword": "Given "
 });
-formatter.step({
-  "line": 26,
-  "name": "Title of Login Page is \"Cogmento CRM\"",
-  "keyword": "When "
-});
-formatter.step({
-  "line": 27,
-  "name": "User enters user name and password",
-  "keyword": "Then "
-});
-formatter.step({
-  "line": 28,
-  "name": "User clicked on login button",
-  "keyword": "Then "
-});
-formatter.step({
-  "line": 29,
-  "name": "User is on Home Page having Title \"Cogmento CRM\"",
-  "keyword": "Then "
-});
-formatter.step({
-  "line": 30,
-  "name": "User quit",
-  "keyword": "Then "
-});
 formatter.match({
-  "location": "LoginStepDefinition.user_is_already_on_Login_Page()"
+  "location": "TaggingStepDefinitions.valid_login_test()"
 });
 formatter.result({
-  "duration": 10990828600,
+  "duration": 380293300,
   "status": "passed"
 });
-formatter.match({
-  "arguments": [
+formatter.scenario({
+  "line": 31,
+  "name": "Create a contact",
+  "description": "",
+  "id": "login-test-for-free-crm-application;create-a-contact",
+  "type": "scenario",
+  "keyword": "Scenario",
+  "tags": [
     {
-      "val": "Cogmento CRM",
-      "offset": 24
+      "line": 30,
+      "name": "@SmokeTest"
     }
-  ],
-  "location": "LoginStepDefinition.title_of_Login_Page_is(String)"
+  ]
 });
-formatter.result({
-  "duration": 23998500,
-  "status": "passed"
-});
-formatter.match({
-  "location": "LoginStepDefinition.user_enters_user_name_and_password()"
-});
-formatter.result({
-  "duration": 409707900,
-  "status": "passed"
+formatter.step({
+  "line": 32,
+  "name": "This is a contact testcase",
+  "keyword": "Given "
 });
 formatter.match({
-  "location": "LoginStepDefinition.user_clicked_on_login_button()"
+  "location": "TaggingStepDefinitions.this_is_a_contact_testcase()"
 });
 formatter.result({
-  "duration": 240701200,
+  "duration": 98400,
   "status": "passed"
 });
-formatter.match({
-  "arguments": [
+formatter.scenario({
+  "line": 35,
+  "name": "Create a deal",
+  "description": "",
+  "id": "login-test-for-free-crm-application;create-a-deal",
+  "type": "scenario",
+  "keyword": "Scenario",
+  "tags": [
     {
-      "val": "Cogmento CRM",
-      "offset": 35
+      "line": 34,
+      "name": "@SmokeTest"
     }
-  ],
-  "location": "LoginStepDefinition.user_is_on_Home_Page_having_Title(String)"
+  ]
 });
-formatter.result({
-  "duration": 5780800,
-  "status": "passed"
+formatter.step({
+  "line": 36,
+  "name": "This is a deal testcase",
+  "keyword": "Given "
 });
 formatter.match({
-  "location": "LoginStepDefinition.user_quit()"
+  "location": "TaggingStepDefinitions.this_is_a_deal_testcase()"
 });
 formatter.result({
-  "duration": 1272377200,
+  "duration": 119500,
+  "status": "passed"
+});
+formatter.scenario({
+  "line": 39,
+  "name": "Create a task",
+  "description": "",
+  "id": "login-test-for-free-crm-application;create-a-task",
+  "type": "scenario",
+  "keyword": "Scenario",
+  "tags": [
+    {
+      "line": 38,
+      "name": "@SmokeTest"
+    },
+    {
+      "line": 38,
+      "name": "@RegressionTest"
+    }
+  ]
+});
+formatter.step({
+  "line": 40,
+  "name": "This is a task testcase",
+  "keyword": "Given "
+});
+formatter.match({
+  "location": "TaggingStepDefinitions.this_is_a_task_testcase()"
+});
+formatter.result({
+  "duration": 171400,
+  "status": "passed"
+});
+formatter.scenario({
+  "line": 73,
+  "name": "validate a report",
+  "description": "",
+  "id": "login-test-for-free-crm-application;validate-a-report",
+  "type": "scenario",
+  "keyword": "Scenario",
+  "tags": [
+    {
+      "line": 72,
+      "name": "@SmokeTest"
+    },
+    {
+      "line": 72,
+      "name": "@RegressionTest"
+    },
+    {
+      "line": 72,
+      "name": "@End2End"
+    }
+  ]
+});
+formatter.step({
+  "line": 74,
+  "name": "This is a report test",
+  "keyword": "Given "
+});
+formatter.match({
+  "location": "TaggingStepDefinitions.this_is_a_report_test()"
+});
+formatter.result({
+  "duration": 100700,
+  "status": "passed"
+});
+formatter.scenario({
+  "line": 77,
+  "name": "application logout",
+  "description": "",
+  "id": "login-test-for-free-crm-application;application-logout",
+  "type": "scenario",
+  "keyword": "Scenario",
+  "tags": [
+    {
+      "line": 76,
+      "name": "@SmokeTest"
+    },
+    {
+      "line": 76,
+      "name": "@RegressionTest"
+    },
+    {
+      "line": 76,
+      "name": "@End2End"
+    }
+  ]
+});
+formatter.step({
+  "line": 78,
+  "name": "This is a logout test",
+  "keyword": "Given "
+});
+formatter.match({
+  "location": "TaggingStepDefinitions.this_is_a_logout_test()"
+});
+formatter.result({
+  "duration": 85300,
   "status": "passed"
 });
 });

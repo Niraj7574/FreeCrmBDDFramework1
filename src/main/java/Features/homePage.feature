@@ -16,19 +16,14 @@
 #""
 ## (Comments)
 #Sample Feature Definition Template
-
-#Feature: Free CRM Login Feature
-  #
-#Scenario Outline: Free CRM Login Test Scenario
-#Given User is already on Login Page
-#When Title of Login Page is "Cogmento CRM"
-#Then User enters "<userName>" and "<password>"
-#Then User clicked on login button
-#Then User is on Home Page having Title "Cogmento CRM"
-#Then User quit
+#Feature: HomePage Test
 #
-#Examples:
-#	|userName | password |
-#	| nirajradadiya1997@gmail.com | Niraj@1234 |
-#	#| niraj | niraj1234 |
+#Scenario: User is able to Create New Contact
+#Given User is already on Home page
+#When User mouse hover on contact link
+#Then User click on contack link
+#Then User click on create button
+#Then User Enters First Name, Last name and email
+#Then User clicks on Save
+#Then User quit
 
